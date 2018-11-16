@@ -13,7 +13,7 @@
         "bignum": "*",
         "blake2": "^2.0.1",
         "cli-color": "^1.3.0",
-        "cryptoforknote-util": "git://github.com/MoneroOcean/node-cryptoforknote-util.git",
+        "cash2-nodejs": "git://github.com/cash2/cash2-nodejs.git",
         "cryptonight-hashing": "git://github.com/MoneroOcean/node-cryptonight-hashing.git",
         "dateformat": "*",
         "mailgun.js": "*",
