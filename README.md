@@ -24,7 +24,7 @@ https://pool1.cash2.org
 ### Start Pool
 `node init.js`
 
-Front end website needs to be hosted. We recommend using Apache web server on the same machine as the pool
+Front end website needs to be hosted. We recommend using Apache web server on the same machine as the pool.
 
 Credits
 ---------
