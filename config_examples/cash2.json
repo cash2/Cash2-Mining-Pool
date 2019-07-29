@@ -125,7 +125,8 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 8070
+        "port": 12277,
+        "rpcPassword": "myRpcPassword"
     },
 
     "redis": {
@@ -212,7 +213,7 @@
     "monitoring": {
         "daemon": {
             "checkInterval": 60,
-            "rpcMethod": "get_status"
+            "rpcMethod": "get_info"
         },
         "wallet": {
             "checkInterval": 60,
