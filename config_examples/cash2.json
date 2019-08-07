@@ -14,7 +14,7 @@
 
     "logging": {
         "files": {
-            "level": "info",
+            "level": "error",
             "directory": "logs",
             "flushInterval": 5
         },
@@ -29,7 +29,7 @@
         "clusterForks": "auto",
         "poolAddress": "** Your pool wallet address **",
         "intAddressPrefix": null,
-        "blockRefreshInterval": 30000,
+        "blockRefreshInterval": 5000,
         "minerTimeout": 900,
         "sslCert": "./cert.pem",
         "sslKey": "./privkey.pem",
@@ -65,7 +65,7 @@
         },
         "banning": {
             "enabled": true,
-            "time": 600,
+            "time": 3600,
             "invalidPercent": 25,
             "checkThreshold": 30
         },
@@ -79,14 +79,14 @@
 
     "payments": {
         "enabled": true,
-        "interval": 600,
+        "interval": 1200,
         "maxAddresses": 5,
         "mixin": 0,
         "priority": 0,
-        "transferFee": 0,
+        "transferFee": 10000000,
         "dynamicTransferFee": true,
         "minerPayFee" : true,
-        "minPayment": 1,
+        "minPayment": 2000000000,
         "maxTransactionAmount": 20000000000,
         "denomination": 1
     },
@@ -94,7 +94,7 @@
     "blockUnlocker": {
         "enabled": true,
         "interval": 30,
-        "depth": 70,
+        "depth": 500,
         "poolFee": 0,
         "devDonation": 0,
         "networkFee": 0,
