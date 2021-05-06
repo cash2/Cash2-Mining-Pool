@@ -1,5 +1,5 @@
 {
-    "poolHost": "your.pool.host",
+    "poolHost": "stratum+tcp://your.pool.host",
 
     "coin": "cash2",
     "symbol": "CASH2",
@@ -74,7 +74,7 @@
             "weight": 300,
             "blockTime": 60,
             "lastBlockCheckRate": 1
-         }
+        }
     },
 
     "payments": {
@@ -85,9 +85,9 @@
         "priority": 0,
         "transferFee": 10000000,
         "dynamicTransferFee": true,
-        "minerPayFee" : true,
+        "minerPayFee": true,
         "minPayment": 2000000000,
-        "maxTransactionAmount": 20000000000,
+        "maxTransactionAmount": 100000000000,
         "denomination": 1
     },
 
@@ -95,7 +95,7 @@
         "enabled": true,
         "interval": 30,
         "depth": 500,
-        "poolFee": 0,
+        "poolFee": 1,
         "devDonation": 0,
         "networkFee": 0,
         "fixBlockHeightRPC": false
@@ -109,7 +109,7 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "password": "your_password",
+        "password": "aPasswordToProtectYourAdminPage",
         "ssl": true,
         "sslPort": 8119,
         "sslCert": "./cert.pem",
@@ -125,8 +125,7 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 12277,
-        "rpcPassword": "myRpcPassword"
+        "port": 8070
     },
 
     "redis": {
@@ -209,15 +208,15 @@
             "disable": "/disable"
         }
     },
-    
+
     "monitoring": {
         "daemon": {
             "checkInterval": 60,
-            "rpcMethod": "get_info"
+            "rpcMethod": "get_status"
         },
         "wallet": {
             "checkInterval": 60,
-            "rpcMethod": "get_balance"
+            "rpcMethod": "getbalance"
         }
     },
 
@@ -232,24 +231,24 @@
                 "enabled": true,
                 "updateInterval": 60,
                 "stepInterval": 1800,
-                "maximumPeriod": 86400
+                "maximumPeriod": 604800
             },
             "miners": {
                 "enabled": true,
                 "updateInterval": 60,
                 "stepInterval": 1800,
-                "maximumPeriod": 86400
+                "maximumPeriod": 604800
             },
             "workers": {
                 "enabled": true,
                 "updateInterval": 60,
                 "stepInterval": 1800,
-                "maximumPeriod": 86400
+                "maximumPeriod": 604800
             },
             "difficulty": {
                 "enabled": true,
-                "updateInterval": 1800,
-                "stepInterval": 10800,
+                "updateInterval": 60,
+                "stepInterval": 1800,
                 "maximumPeriod": 604800
             },
             "price": {
