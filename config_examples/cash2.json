@@ -216,7 +216,7 @@
         },
         "wallet": {
             "checkInterval": 60,
-            "rpcMethod": "get_balance"
+            "rpcMethod": "getbalance"
         }
     },
 
